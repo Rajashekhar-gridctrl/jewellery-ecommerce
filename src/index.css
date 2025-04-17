@@ -12,6 +12,12 @@ body {
   height: 100%;
 } */
 
+
+body {
+  /* background-color: #f7efe4 !important; */
+  background-color: #f9f4f0 !important;
+}
+
 @font-face {
   font-family: 'LogoFont';
   src: url('./assets/fonts/amsterdam-3/Amsterdam.ttf') format('truetype');
