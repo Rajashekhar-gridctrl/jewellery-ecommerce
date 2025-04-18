@@ -1,6 +1,4 @@
-import MainSearch from "./MainSearch";
 import ShippingBanner from "./ShippingBanner";
-import MainMenu from "./MainMenu";
 import MobileNavigation from "./MobileNavigation";
 import DesktopNavigation from "./DesktopNavigation";
 
