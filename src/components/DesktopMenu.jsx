@@ -1,6 +1,6 @@
 function DesktopMenu() {
   return (
-    <div className="hidden md:flex items-center gap-10 mx-auto">
+    <div className="hidden md:flex items-center gap-10 mx-auto justify-center mt-4 pb-4">
       <ul className="flex gap-8 text-gray-700">
         <li><a className="hover:text-gray-500" href="#products">All Products</a></li>
         <li><a className="hover:text-gray-500" href="#solutions">Bestsellers</a></li>
