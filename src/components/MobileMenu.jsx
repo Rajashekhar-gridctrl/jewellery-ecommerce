@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiOutlineMenu, HiOutlineX, HiChevronRight } from 'react-icons/hi';
+import { menuLinks } from "../data/MenuLinks"
 
 function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,23 +12,10 @@ function MobileMenu() {
     return () => (document.body.style.overflow = 'auto');
   }, [isOpen]);
 
-  const links = [
-    { name: 'All Products', href: '#' },
-    { name: 'Bestsellers', href: '#' },
-    { name: 'Latest Collections', href: '#' },
-    { name: 'Instagram Collections', href: '#' },
-    { name: 'Necklaces', href: '#' },
-    { name: 'Earrings', href: '#' },
-    { name: 'Bangles', href: '#' },
-    { name: 'Accessories', href: '#' },
-    { name: 'Wedding Store', href: '#' },
-  ];
-
   return (
     <div className="md:hidden z-50">
-      {/* Hamburger Icon */}
       {!isOpen && (
-        <button onClick={toggleMenu} className="text-gray-800 text-3xl focus:outline-none">
+        <button onClick={toggleMenu} className="text-[#996e21] text-3xl focus:outline-none mt-3">
           <motion.div
             initial={{ rotate: 0 }}
             animate={{ rotate: isOpen ? 90 : 0 }}
@@ -71,7 +59,7 @@ function MobileMenu() {
               </div>
 
               <ul className="flex flex-col gap-8 text-gray-700 text-lg">
-                {links.map((item, index) => (
+                {menuLinks.map((item, index) => (
                   <motion.li key={index} whileTap={{ scale: 0.95 }}>
                     <a
                       onClick={toggleMenu}
