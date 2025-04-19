@@ -1,7 +1,7 @@
 import Search from "./Search";
 import UserIcons from "./UserIcons";
 import MobileMenu from "./MobileMenu";
-import Logo from "./Logo";
+import Logo from "../Logo";
 
 function MobileNavigation() {
   return (

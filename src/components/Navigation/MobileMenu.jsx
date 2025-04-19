@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiOutlineMenu, HiOutlineX, HiChevronRight } from 'react-icons/hi';
-import { menuLinks } from "../data/MenuLinks"
+import { menuLinks } from "../../data/MenuLinks"
 
 function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);

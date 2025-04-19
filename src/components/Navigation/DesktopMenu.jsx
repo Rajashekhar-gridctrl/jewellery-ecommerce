@@ -1,4 +1,4 @@
-import { menuLinks } from "../data/MenuLinks"
+import { menuLinks } from "../../data/MenuLinks"
 
 function DesktopMenu() {
   return (

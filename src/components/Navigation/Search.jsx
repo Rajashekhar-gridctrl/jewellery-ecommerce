@@ -1,5 +1,5 @@
 import { HiSearch } from "react-icons/hi";
-import useTypingEffect from "../hooks/useTypingEffect";
+import useTypingEffect from "../../hooks/useTypingEffect";
 
 function Search() {
   const suggestion = useTypingEffect(["Bangles", "Necklaces", "Rings", "Bracelets", "Earrings"]);

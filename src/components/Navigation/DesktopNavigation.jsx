@@ -1,7 +1,7 @@
 import Search from "./Search";
 import UserIcons from "./UserIcons";
 import DesktopMenu from "./DesktopMenu";
-import Logo from "./Logo";
+import Logo from "../Logo";
 
 function DesktopNavigation() {
   return (
