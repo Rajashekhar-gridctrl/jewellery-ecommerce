@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiOutlineMenu, HiOutlineX, HiChevronRight } from 'react-icons/hi';
 import { menuLinks } from "../../data/MenuLinks"
+import MobileBannerCover from "../../assets/images/mobile-menu-banner-5.jpg";
 
 function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,7 @@ function MobileMenu() {
   return (
     <div className="md:hidden z-50">
       {!isOpen && (
-        <button onClick={toggleMenu} className="text-[#996e21] text-3xl focus:outline-none mt-3">
+        <button onClick={toggleMenu} className="text-[#996e21] focus:outline-none mt-3">
           <motion.div
             initial={{ rotate: 0 }}
             animate={{ rotate: isOpen ? 90 : 0 }}
@@ -45,10 +46,10 @@ function MobileMenu() {
               transition={{ type: 'spring', stiffness: 300, damping: 30 }}
               className="fixed inset-y-0 left-0 w-4/5 max-w-sm bg-white z-40 flex flex-col p-6 shadow-xl overflow-y-auto"
             >
-              <div className="flex justify-end mb-10">
+              <div className="flex justify-end mb-5 border-b border-[#eee] pb-2">
                 <motion.button
                   onClick={toggleMenu}
-                  className="text-gray-800 text-3xl focus:outline-none"
+                  className="text-[#996e21] text-2xl focus:outline-none"
                   initial={{ opacity: 0, rotate: -90 }}
                   animate={{ opacity: 1, rotate: 0 }}
                   exit={{ opacity: 0, rotate: 90 }}
@@ -58,7 +59,16 @@ function MobileMenu() {
                 </motion.button>
               </div>
 
-              <ul className="flex flex-col gap-8 text-gray-700 text-lg">
+              <div className="w-full mb-8">
+                <img 
+                  src={MobileBannerCover} 
+                  alt="Mobile Banner" 
+                  className="w-full object-cover block rounded-2xl"
+                  style={{ height: "150px" }}
+                />
+              </div>
+
+              <ul className="flex flex-col gap-6 text-gray-700 text-lg">
                 {menuLinks.map((item, index) => (
                   <motion.li key={index} whileTap={{ scale: 0.95 }}>
                     <a

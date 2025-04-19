@@ -21,7 +21,6 @@ function DesktopNavigation() {
           </div>
         </div>
       </div>
-      <DesktopMenu />
     </>
   );
 }
