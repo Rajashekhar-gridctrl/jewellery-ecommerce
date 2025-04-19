@@ -1,20 +1,24 @@
-import { menuLinks } from "../../data/MenuLinks"
+import { motion } from "framer-motion";
+import { menuLinks } from "../../data/MenuLinks";
 
 function DesktopMenu() {
   return (
-    <div className="hidden md:flex items-center gap-10 mx-auto justify-center mt-4 pb-4 sticky top-0 z-50 shadow-[0_2px_4px_-2px_rgba(0,0,0,0.1)]">
-      <ul className="flex gap-8 text-gray-700">
-        {
-          menuLinks.map((item, index) => (
-              <li key={index}>
-              <a className="hover:text-gray-500" href={item.href}>
-                {item.name}
-              </a>
-            </li>
-          ))
-        }
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="flex items-center justify-center gap-10 px-8 py-3"
+    >
+      <ul className="flex gap-8 text-gray-700 text-sm font-medium">
+        {menuLinks.map((item, index) => (
+          <li key={index}>
+            <a className="hover:text-gray-500" href={item.href}>
+              {item.name}
+            </a>
+          </li>
+        ))}
       </ul>
-    </div>
+    </motion.div>
   );
 }
 

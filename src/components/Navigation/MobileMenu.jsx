@@ -60,9 +60,13 @@ function MobileMenu() {
               </div>
 
               <div className="w-full mb-8">
-                <img 
-                  src={MobileBannerCover} 
-                  alt="Mobile Banner" 
+                <motion.img
+                  src={MobileBannerCover}
+                  alt="Mobile Banner"
+                  initial={{ scale: 0.95, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.95, opacity: 0 }}
+                  transition={{ duration: 0.5 }}
                   className="w-full object-cover block rounded-2xl"
                   style={{ height: "150px" }}
                 />
