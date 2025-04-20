@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
 @import "tailwindcss";
+
 
 /* *, *::before, *::after {
   margin: 0;
@@ -25,6 +27,9 @@ body {
   font-style: normal;
 }
 
+.font-playwrite {
+  font-family: 'Playwrite CU', sans-serif;
+}
 
 @theme {
   --font-lato: "Lato", sans-serif;
