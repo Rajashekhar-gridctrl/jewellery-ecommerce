@@ -4,41 +4,49 @@ import RingImage from "../assets/images/ring.jpg";
 function About() {
   return (
     <>
-      <section className="mt-16 flex">
-        <div className="basis-1/2 md:pl-20">
-          <div className="font-semobold">
+      <section className="mt-16 flex flex-col md:flex-row px-4 md:px-0">
+        <div className="w-full md:basis-1/2 md:pl-20">
+          <div className="font-semibold">
             <div>
-              <span className="text-6xl">Experience the</span>
+              <span className="text-4xl md:text-6xl">Experience the</span>
             </div>
-            <div className="flex items-center gap-6 mt-4 mb-4">
-              <span className="text-6xl">Brilliance of</span>
+            <div className="flex flex-wrap items-center gap-4 mt-3 mb-3 md:mt-4 md-mt-4">
+              <span className="text-4xl md:text-6xl">Brilliance of</span>
               <img
-                style={{
-                  width: "128px",
-                  height: "65px",
-                  borderRadius: "20px",
-                  objectFit: "cover",
-                }}
                 src={RingImage}
                 alt="Pendant"
+                className="rounded-xl object-cover"
+                style={{
+                  width: "100px",
+                  height: "50px",
+                }}
               />
             </div>
             <div>
-              <span className="text-6xl">Craftsmanship</span>
+              <span className="text-4xl md:text-6xl">Craftsmanship</span>
             </div>
           </div>
-          <div className="mt-16 flex-col text-2xl">
-            <span className="block">Discover a world where beauty meets craftsmanship, </span>
+          <div className="hidden md:block mt-8 text-lg md:text-2xl">
+            <span className="block">Discover a world where beauty meets craftsmanship,</span>
             <span className="block">where every piece of jewellery tells a story.</span>
           </div>
         </div>
-        <div className="basis-1/2 flex justify-center h-[500px]">
+
+        <div className="w-full md:basis-1/2 flex justify-center mt-10 md:mt-0 md:h-[500px]">
           <img
             src={HeroImage}
             alt="Right Side"
             className="object-cover rounded-3xl"
-            style={{"height": "100%", "width": "400px"}}
+            style={{
+              width: "100%",
+              maxWidth: "400px",
+              height: "auto",
+            }}
           />
+        </div>
+
+        <div className="block md:hidden mt-8 text-lg md:text-2xl text-center">
+          <span>Discover a world where beauty meets craftsmanship, where every piece of jewellery tells a story.</span>
         </div>
       </section>
     </>
