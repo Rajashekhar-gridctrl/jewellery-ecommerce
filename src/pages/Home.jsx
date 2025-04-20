@@ -1,5 +1,6 @@
 import About from "../components/About";
 import BannerVideo from "../components/BannerVideo"
+import FeaturedCategory from "../components/FeaturedCategory";
 import FeaturedCollection from "../components/FeaturedCollection";
 
 function Home() {
@@ -11,6 +12,9 @@ function Home() {
       </div>
       <div>
         <FeaturedCollection />
+      </div>
+      <div>
+        <FeaturedCategory />
       </div>
     </>
   )
