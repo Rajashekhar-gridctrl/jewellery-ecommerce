@@ -1,5 +1,5 @@
-import PendentImage from "../assets/images/ring.jpg";
 import HeroImage from "../assets/images/woman.jpg";
+import RingImage from "../assets/images/ring.jpg";
 
 function About() {
   return (
@@ -19,7 +19,7 @@ function About() {
                   borderRadius: "20px",
                   objectFit: "cover",
                 }}
-                src={PendentImage}
+                src={RingImage}
                 alt="Pendant"
               />
             </div>
