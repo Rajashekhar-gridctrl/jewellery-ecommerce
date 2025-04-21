@@ -3,6 +3,7 @@ import BannerVideo from "../components/BannerVideo"
 import FeaturedCategory from "../components/FeaturedCategory";
 import FeaturedCollection from "../components/FeaturedCollection";
 import FeaturedProducts from "../components/FeaturedProducts";
+import LocateStore from "../components/LocateStore";
 
 function Home() {
   return (
@@ -19,6 +20,9 @@ function Home() {
       </div>
       <div>
         <FeaturedProducts />
+      </div>
+      <div>
+        <LocateStore />
       </div>
     </>
   )
