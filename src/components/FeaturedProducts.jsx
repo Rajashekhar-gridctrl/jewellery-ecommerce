@@ -192,15 +192,17 @@ function FeaturedProducts() {
                     {product.discount}
                   </div>
                 )}
-
-                <motion.img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-[310px] object-cover"
-                  style={{ width: "100%" }}
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.4 }}
-                />
+                
+                <div className="h-[310px] w-full overflow-hidden rounded-t-xl">
+                  <motion.img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full object-cover"
+                    style={{ width: "100%", height: "100%" }}
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.4 }}
+                  />
+                </div>
 
                 <div className="p-4">
                   <h3 className="text-lg font-medium text-gray-800">{product.name}</h3>
