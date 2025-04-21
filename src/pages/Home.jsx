@@ -12,18 +12,10 @@ function Home() {
       <div className="px-2 md:px-12">
         <About />
       </div>
-      <div>
-        <FeaturedCollection />
-      </div>
-      <div>
-        <FeaturedCategory />
-      </div>
-      <div>
-        <FeaturedProducts />
-      </div>
-      <div>
-        <LocateStore />
-      </div>
+      <FeaturedCollection />
+      <FeaturedCategory />
+      <FeaturedProducts />
+      <LocateStore />
     </>
   )
 }

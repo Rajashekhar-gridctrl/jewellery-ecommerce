@@ -142,7 +142,7 @@ function FeaturedProducts() {
                     <motion.img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-48 object-contain"
+                      className="w-full h-48 object-cover"
                       style={{ width: "100%", height: "auto" }}
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.4 }}
@@ -196,7 +196,7 @@ function FeaturedProducts() {
                 <motion.img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-[310px] object-cover"
                   style={{ width: "100%" }}
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.4 }}
