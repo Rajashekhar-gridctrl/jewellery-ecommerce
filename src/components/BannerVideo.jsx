@@ -4,7 +4,7 @@ function BannerVideo() {
   return (
     <>
       <video autoPlay loop muted>
-        <source src={videoFile} type="video/mp4" />
+        <source src={videoFile} type="video/mp4" autoPlay />
       </video>
     </>
   )
