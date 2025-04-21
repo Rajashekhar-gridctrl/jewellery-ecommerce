@@ -27,8 +27,11 @@ function About() {
             </div>
           </div>
           <div className="hidden md:block mt-8 text-lg md:text-2xl">
-            <span className="block">Discover a world where beauty meets craftsmanship,</span>
-            <span className="block">where every piece of jewellery tells a story.</span>
+            <span className="block">Step into a world where beauty meets craftsmanship —</span>
+            <span className="block">where every pendant is more than just jewellery,</span>
+            <span className="block">it's a story waiting to be told.</span>
+
+            <span className="block mt-4">At Ramya Nagendra, we bring timeless elegance to life through craftsmanship that celebrates individuality, tradition, and artistic expression.</span>
           </div>
         </div>
 
@@ -46,7 +49,7 @@ function About() {
         </div>
 
         <div className="block md:hidden mt-8 text-lg md:text-2xl text-center">
-          <span>Discover a world where beauty meets craftsmanship, where every piece of jewellery tells a story.</span>
+          <span>Step into a world where beauty meets craftsmanship—where every pendant is more than just jewellery, it's a story waiting to be told. At Ramya Nagendra, we bring timeless elegance to life through craftsmanship that celebrates individuality, tradition, and artistic expression.</span>
         </div>
       </section>
     </>
