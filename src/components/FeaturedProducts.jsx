@@ -197,7 +197,7 @@ function FeaturedProducts() {
                   <motion.img
                     src={product.image}
                     alt={product.name}
-                    className="w-full object-cover"
+                    className="w-full"
                     style={{ "width": "100%", "height": "100%" }}
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.4 }}
