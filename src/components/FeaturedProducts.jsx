@@ -193,12 +193,12 @@ function FeaturedProducts() {
                   </div>
                 )}
                 
-                <div className="h-[310px] w-full overflow-hidden rounded-t-xl">
+                <div className="w-full h-[310px]">
                   <motion.img
                     src={product.image}
                     alt={product.name}
-                    className="object-cover"
-                    style={{ width: "100%", height: "100%" }}
+                    className="w-full object-cover"
+                    style={{ "width": "100%", "height": "100%" }}
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.4 }}
                   />
