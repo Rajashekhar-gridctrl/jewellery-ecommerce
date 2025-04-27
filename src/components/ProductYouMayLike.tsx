@@ -43,7 +43,7 @@ const arrowVariants: any = {
 const ProductYouMayLike = () => {
     return (
         <div className="container min-w-full p-5 px-10 mt-20 bg-green-100 rounded-md " style={{
-            background: "linear-gradient(352.75deg, rgb(169, 217, 102) -5.77%, rgb(252, 255, 248) 102.02%, rgb(252, 255, 248) 102.02%)"
+            background: "linear-gradient(352.75deg, rgb(194 166 117) -5.77%, rgb(252, 255, 248) 102.02%, rgb(252, 255, 248) 102.02%)"
         }}>
 
             <div className="">
@@ -62,7 +62,7 @@ const ProductYouMayLike = () => {
                                 <div>
 
                                     <h4 className="relative font-lato p-2 rounded-b-lg text-green text-1xs tracking-wider font-normal"
-                                   >
+                                    >
                                         Necklace
                                         <span className="flex items-center">
                                             <MdOutlineCurrencyRupee className="text-md" /> 780</span>
@@ -77,15 +77,6 @@ const ProductYouMayLike = () => {
                             </div>
                         )
                     })}
-
-
-                    <div className="flex-3">
-                        <img src="https://cdn.caratlane.com/media/catalog/product/K/U/KU01756-2Y0000_1_lar.jpg"
-                            className="h-50 w-xs rounded-md" />
-                    </div>                <div className="flex-3">
-                        <img src="https://cdn.caratlane.com/media/catalog/product/K/U/KU01756-2Y0000_1_lar.jpg"
-                            className="h-50 w-xs rounded-md" />
-                    </div>
                 </div>
             </div>
         </div>
