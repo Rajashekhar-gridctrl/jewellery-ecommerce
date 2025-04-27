@@ -47,7 +47,7 @@ const ProductYouMayLike = () => {
         }}>
 
             <div className="">
-                <h3 className="flex-12 text-4xl md:text-2xl font-lato font-semibold text-center">
+                <h3 className="flex-12 sm:text-3xl text-2xl font-lato font-semibold text-center">
                     Product you May Like
                 </h3>
 
@@ -61,7 +61,7 @@ const ProductYouMayLike = () => {
                                     className="w-full object-contain rounded-t-lg" />
                                 <div>
 
-                                    <h4 className="relative font-lato p-2 rounded-b-lg text-green text-1xs tracking-wider font-normal"
+                                    <h4 className="relative font-lato p-2 rounded-b-lg text-green  sm:text-base text-[14px]  tracking-wider font-normal"
                                     >
                                         Necklace
                                         <span className="flex items-center">
