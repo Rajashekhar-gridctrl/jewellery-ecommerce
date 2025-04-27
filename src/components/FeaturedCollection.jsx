@@ -51,14 +51,14 @@ function FeaturedCollection() {
       viewport={{ once: true, amount: 0.1 }}
     >
       <div className="text-center mb-10">
-        <h3 className="text-4xl md:text-6xl font-semibold">Ramya Nagendra's Collections</h3>
+        <h3 className="text-4xl md:text-3xl font-semibold">Ramya Nagendra's Collections</h3>
         <p className="text-lg md:text-2xl mt-6">Explore our Authentic Collection</p>
       </div>
 
       <div className="flex flex-col md:flex-row gap-6 justify-center items-center md:items-stretch">
         {/* Left large image */}
         <motion.a
-          href={collections[0].link}
+          href='/product'
           className="w-full md:w-1/2 overflow-hidden rounded-xl shadow-md"
           {...hoverEffect}
         >

@@ -6,42 +6,42 @@ import Woman from "../assets/images/all-categories.jpg"
 const categories = [
   {
     title: 'Earrings',
-    href: '#',
+    href: '/product',
     img: 'https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw83758477/homepage/shopByCategory/earrings-cat.jpg'
   },
   {
     title: 'Finger Rings',
-    href: '#',
+    href: '/product',
     img: 'https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw47da8133/homepage/shopByCategory/rings-cat.jpg'
   },
   {
     title: 'Pendants',
-    href: '#',
+    href: '/product',
     img: 'https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw63553376/homepage/shopByCategory/pendants-cat.jpg'
   },
   {
     title: 'Mangalsutra',
-    href: '#',
+    href: '/product',
     img: 'https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw442a2739/homepage/shopByCategory/mangalsutra-cat.jpg'
   },
   {
     title: 'Bracelets',
-    href: '#',
+    href: '/product',
     img: 'https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw2562a9fe/homepage/shopByCategory/bracelets-cat.jpg'
   },
   {
     title: 'Bangles',
-    href: '#',
+    href: '/product',
     img: 'https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw1226b98b/homepage/shopByCategory/bangles-cat.jpg'
   },
   {
     title: 'Chains',
-    href: '#',
+    href: '/product',
     img: 'https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwd0550e4c/homepage/shopByCategory/chains-cat.jpg'
   },
   {
     title: 'View All',
-    href: '#',
+    href: '/product',
     img: Woman
   }
 ];
@@ -56,7 +56,7 @@ function FeaturedCategory() {
       viewport={{ once: true, amount: 0.1 }}
     >
       <div className="text-center mb-10">
-        <h3 className="text-4xl md:text-6xl font-semibold">Crafted With Love, Made for You</h3>
+        <h3 className="text-4xl md:text-3xl font-semibold">Crafted With Love, Made for You</h3>
         <p className="text-lg md:text-2xl mt-2">Explore Our Curated Categories</p>
       </div>
 

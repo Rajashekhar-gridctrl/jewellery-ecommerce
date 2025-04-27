@@ -75,12 +75,12 @@ function FeaturedProducts() {
         repeatType: "loop",
       },
     },
-  };  
+  };
 
   return (
     <section className="px-4 md:px-32 mt-16 md:mt-32">
       <div className="relative mb-8">
-        <h3 className="text-4xl md:text-6xl font-semibold text-center">
+        <h3 className="text-4xl md:text-3xl font-semibold text-center">
           Featured Products
         </h3>
         <div className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 gap-2">
@@ -126,14 +126,13 @@ function FeaturedProducts() {
               >
                 {visibleProducts.map((product) => (
                   <motion.a
-                    // href={`/products/${product.id}`}
-                    href="#"
+                    href='/product'
                     key={product.id}
                     className="relative rounded-xl bg-white shadow-sm transition overflow-hidden group block"
                     initial="rest"
                     whileHover="hover"
                     animate="rest"
-                  >                
+                  >
                     {product.discount && (
                       <div className="absolute top-4 left-4 bg-yellow-300 text-xs font-medium px-2 py-1 rounded-full">
                         {product.discount}
@@ -182,8 +181,7 @@ function FeaturedProducts() {
           <div className="flex md:hidden gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4">
             {products.map((product) => (
               <motion.a
-                // href={`/products/${product.id}`}
-                href="#"
+                href='/product'
                 key={product.id}
                 className="relative min-w-[80%] bg-white rounded-xl shadow-sm snap-center flex-shrink-0 overflow-hidden group block"
               >
@@ -192,7 +190,7 @@ function FeaturedProducts() {
                     {product.discount}
                   </div>
                 )}
-                
+
                 <div className="w-full h-[310px]">
                   <motion.img
                     src={product.image}
