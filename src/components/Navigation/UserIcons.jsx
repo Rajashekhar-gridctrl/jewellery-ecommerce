@@ -6,8 +6,15 @@ function UserIcons() {
   return (
     <>
       <div className="text-2xl text-[#996e21]"><FaRegHeart /></div>
-      <div className="text-2xl text-[#996e21]"><FaUserCircle /></div>
-      <div className="text-2xl text-[#996e21]"><IoIosCart /></div>
+      <div className="text-2xl text-[#996e21]">
+        <a href="/login" className="flex items-center gap-2">
+          <FaUserCircle />
+        </a>
+      </div>
+      <div className="text-2xl text-[#996e21]">
+        <a href="/cart" className="flex items-center gap-2">
+          <IoIosCart />
+        </a></div>
     </>
   )
 }

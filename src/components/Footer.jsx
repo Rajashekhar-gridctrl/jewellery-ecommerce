@@ -14,6 +14,7 @@ function Footer() {
       title: "Jewellery",
       key: "jewellery",
       links: [
+        { name: "About us", href: "/about-us" },
         { name: "Earrings", href: "/" },
         { name: "Rings", href: "/" },
         { name: "Necklaces", href: "/" },
@@ -48,7 +49,7 @@ function Footer() {
         { name: "Shipping Policy", href: "/shipping-policy" },
         { name: "Terms of Service", href: "/terms-of-service" },
         { name: "Track Order", href: "/track-order" },
-        
+
       ]
     },
     {
@@ -74,7 +75,7 @@ function Footer() {
     <footer className="bg-[#F9F4F0] text-gray-700 pt-12 pb-6">
       <div className="w-[95%] mx-auto rounded-[30px] bg-[#CFB484] px-6 md:px-12 pt-12 pb-6">
         <div className="max-w-7xl mx-auto flex flex-col md:grid md:grid-cols-5 gap-6 text-sm">
-          { sections.map((section, index) => (
+          {sections.map((section, index) => (
             <div
               key={section.key}
               // className={`w-full ${index !== sections.length - 1 ? 'border-b border-gray-300' : ''} md:border-0 md:pb-0`}
