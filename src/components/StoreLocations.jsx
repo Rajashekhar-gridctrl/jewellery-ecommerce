@@ -2,7 +2,7 @@ const StoreLocations = () => {
     return (
         <div class="flex flex-col md:flex-row gap-6 pt-10 pb-0">
             {/* <!-- Left: Map --> */}
-            <div class="w-full md:w-1/2 h-[300px] bg-[#c2a675] rounded-lg" id="map">
+            <div class="w-full hidden md:block md:w-1/2 h-[300px] bg-[#c2a675] rounded-lg" id="map">
                 {/* <!-- Map will be loaded here --> */}
             </div>
 

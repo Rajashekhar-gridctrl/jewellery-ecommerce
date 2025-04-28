@@ -33,7 +33,7 @@ const ProductYouMayLike = () => {
         }}>
 
             <div className="">
-                <h3 className="flex-12 sm:text-3xl text-2xl font-lato font-semibold text-center">
+                <h3 className="flex-12 sm:text-3xl text-xl md:text-2xl font-lato font-semibold text-center">
                     Product you May Like
                 </h3>
 
@@ -42,7 +42,7 @@ const ProductYouMayLike = () => {
                     {products.map((product) => {
                         return (
 
-                            <div className="min-w-[30%] border-green-100 bg-white rounded-lg">
+                            <div className="min-w-[60%] md:min-w-[30%] border-green-100 bg-white rounded-lg">
                                 <img src={product.image}
                                     className="w-full object-contain rounded-t-lg" />
                                 <div>

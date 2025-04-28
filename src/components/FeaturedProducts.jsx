@@ -12,8 +12,6 @@ import productImg6 from "../assets/images/product-6.jpg";
 import productImg7 from "../assets/images/product-7.jpg";
 import productImg8 from "../assets/images/product-8.jpg";
 import productImg9 from "../assets/images/product-9.jpg";
-import productImg10 from "../assets/images/product-10.jpg";
-import productImg11 from "../assets/images/product-11.jpg";
 
 const products = [
   { id: 1, name: "Sample Name Gold plated", price: 1050.0, oldPrice: 1150.0, discount: "-50%", image: productImg1 },

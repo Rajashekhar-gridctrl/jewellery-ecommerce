@@ -4,10 +4,17 @@ import ProductYouMayLike from "../components/ProductYouMayLike";
 import NewProductOffers from "../components/newProductOffers";
 import StoreLocations from "../components/StoreLocations";
 
-const images = ["http://localhost:5173/src/assets/images/product-1.jpg",
-    "http://localhost:5173/src/assets/images/product-2.jpg",
-    "http://localhost:5173/src/assets/images/product-3.jpg",
-    "http://localhost:5173/src/assets/images/product-4.jpg"
+import featuredImg from "../assets/images/woman-2.jpg";
+import productImg1 from "../assets/images/product-1.jpg";
+import productImg2 from "../assets/images/product-2.jpg";
+import productImg3 from "../assets/images/product-3.jpg";
+import productImg4 from "../assets/images/product-4.jpg";
+
+const images = [featuredImg,
+    productImg1,
+    productImg2,
+    productImg3,
+    productImg4
 ]
 
 
@@ -32,7 +39,7 @@ const ProductDetailsPage = () => {
             url: 'https://ramyanagendra.com/products/laxmi-pendant-long-black-beads-rn278h46',
             title: 'Laxmi pendant long black beads',
             text: 'RN278H46',
-          });
+        });
     }
 
 
@@ -126,7 +133,7 @@ const ProductDetailsPage = () => {
                                 </button>
 
                                 <button
-                                onClick={shareHandler}
+                                    onClick={shareHandler}
                                     className="py-4 px-6 border border-[#c2a675] rounded-full shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-300 hover:bg-gray-50 ml-4 flex items-center gap-2">
                                     <MdShare size={24} /> Share
                                 </button>
