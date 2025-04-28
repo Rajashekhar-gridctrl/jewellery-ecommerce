@@ -38,7 +38,7 @@ const ProductDetailsPage = () => {
     const shareHandler = async () => {
         await navigator?.share({
             url: 'https://jewellery-ecommerce-five.vercel.app/product',
-            title: 'Divine 1grm Gold Bangles',
+            title: 'Divine 1grm Gold Bangles - Buy Now',
             text: 'RN278H46',
         });
     }
@@ -48,14 +48,19 @@ const ProductDetailsPage = () => {
         <>
             <Helmet>
                 <title>Divine 1grm Gold Bangles - Buy Now</title>
-                <meta name="description" content='1grm Gold Chain' />
-                <meta property="og:title" content='Divine 1grm Gold Bangles - Buy Now' />
-                <meta property="og:description" content='1grm Gold Chain' />
-                <meta property="og:image" content='https://jewellery-ecommerce-five.vercel.app/assets/product-1-jAlF4z-T.jpg' />
-                <meta property="og:url" content='https://jewellery-ecommerce-five.vercel.app/product' />
+                <meta name="title" content="Divine 1grm Gold Bangles - Buy Now" />
+                <meta name="description" content='Discover our exquisite collection of handmade and readymade imitation jewelry, crafted with care and quality. From elegant necklaces to timeless bangles, explore unique designs perfect for every special occasion. Shop now for affordable luxury and experience exceptional service' />
+                <meta name="description" content="Elegant 1-gram gold bangles, perfect for every occasion." />
+                <meta property="og:title" content="Divine 1grm Gold Bangles - Buy Now" />
+                <meta property="og:description" content="Elegant 1-gram gold bangles, perfect for every occasion." />
+                <meta property="og:image" content="https://jewellery-ecommerce-five.vercel.app/assets/product-1-jAlF4z-T.jpg" />
+                <meta property="og:url" content="https://jewellery-ecommerce-five.vercel.app/product" />
                 <meta property="og:type" content="product" />
+                <meta property="og:image:width" content="720" />
+                <meta property="og:image:height" content="683" />
+                <meta property="og:price:amount" content="599.00" />
+                <meta property="og:price:currency" content="INR" />
             </Helmet>
-
 
             <div className="p-10 pb-0 font-lato">
                 <div className="lg:max-w-6xl max-w-xl mx-auto">
