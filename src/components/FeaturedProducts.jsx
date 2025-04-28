@@ -78,7 +78,7 @@ function FeaturedProducts() {
   };
 
   return (
-    <section className="px-4 md:px-32 mt-16 md:mt-32">
+    <section className="px-4 md:px-32 mt-16 md:mt-32" id="featured-products">
       <div className="relative mb-8">
         <h3 className="text-4xl md:text-3xl font-semibold text-center">
           Featured Products
@@ -142,7 +142,7 @@ function FeaturedProducts() {
                       src={product.image}
                       alt={product.name}
                       className="w-full h-48 object-cover"
-                      style={{ width: "100%", height: "auto" }}
+                      style={{ width: "100%", height: "250px" }}
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.4 }}
                     />

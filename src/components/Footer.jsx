@@ -14,39 +14,41 @@ function Footer() {
       title: "Jewellery",
       key: "jewellery",
       links: [
-        { name: "Earrings", href: "/earrings" },
-        { name: "Rings", href: "/rings" },
-        { name: "Necklaces", href: "/necklaces" },
-        { name: "Bracelets", href: "/bracelets" },
-        { name: "Mangalsutra", href: "/mangalsutra" }
+        { name: "Earrings", href: "/" },
+        { name: "Rings", href: "/" },
+        { name: "Necklaces", href: "/" },
+        { name: "Bracelets", href: "/" },
+        { name: "Mangalsutra", href: "/" }
       ]
     },
     {
       title: "Collections",
       key: "collections",
       links: [
-        { name: "Wedding", href: "/collections/wedding" },
-        { name: "Workwear", href: "/collections/workwear" },
-        { name: "Partywear", href: "/collections/partywear" }
+        { name: "Wedding", href: "/" },
+        { name: "Workwear", href: "/" },
+        { name: "Partywear", href: "/" }
       ]
     },
     {
       title: "Gifting",
       key: "gifting",
       links: [
-        { name: "Birthday", href: "/gifting/birthday" },
-        { name: "Anniversary", href: "/gifting/anniversary" }
+        { name: "Birthday", href: "/" },
+        { name: "Anniversary", href: "/" }
       ]
     },
     {
       title: "Information",
       key: "information",
       links: [
-        { name: "Contact Us", href: "/contact-us" },
+        { name: "Contact Us", href: "/contact-information" },
         { name: "FAQs", href: "/faqs" },
-        { name: "Store Locator", href: "/store-locator" },
-        { name: "Return Policy", href: "/return-policy" },
-        { name: "Privacy Policy", href: "/privacy-policy" }
+        { name: "Store Locator", href: "/contact-information" },
+        { name: "Shipping Policy", href: "/shipping-policy" },
+        { name: "Terms of Service", href: "/terms-of-service" },
+        { name: "Track Order", href: "/track-order" },
+        
       ]
     },
     {
@@ -54,17 +56,16 @@ function Footer() {
       key: "account",
       links: [
         { name: "Wishlist", href: "/account/wishlist" },
-        { name: "Orders", href: "/account/orders" },
-        { name: "Sign In / Sign Up", href: "/account/addresses" }
+        { name: "Orders", href: "/order-details" },
+        { name: "Sign In / Sign Up", href: "/login" }
       ]
     },
     {
       title: "Socials",
       key: "socials",
       links: [
-        { name: "Facebook", href: "https://www.facebook.com/" },
-        { name: "Instagram", href: "https://www.instagram.com/" },
-        { name: "Twitter", href: "https://twitter.com/" }
+        { name: "Instagram", href: "https://www.instagram.com/ramyanagendra_official/" },
+        { name: "Youtube", href: "https://www.youtube.com/@RamyaNagendraimitations" }
       ]
     }
   ];

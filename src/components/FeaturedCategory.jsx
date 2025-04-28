@@ -49,6 +49,7 @@ const categories = [
 function FeaturedCategory() {
   return (
     <motion.section
+      id="featured-categories"
       className="px-4 md:px-32 mt-16 md:mt-32"
       variants={scrollVariants}
       initial="hidden"

@@ -1,19 +1,15 @@
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-import { FaPinterest } from "react-icons/fa";
 
 function ShippingBanner() {
   return (
     <div className="flex flex-col md:flex-row md:items-center md:justify-between text-sm py-3 px-4 bg-[#CFB484] font-lato gap-2 text-center md:text-left">
       <div className="hidden md:flex justify-start space-x-4">
         <span className="text-[#1877F2] text-xl">
-          <FaFacebook />
+          <a href="https://www.instagram.com/ramyanagendra_official/"><FaFacebook /></a>
         </span>
         <span className="text-[#E1306C] text-xl">
-          <FaInstagram />
-        </span>
-        <span className="text-[#E60023] text-xl">
-          <FaPinterest />
+          <a href="https://www.youtube.com/@RamyaNagendraimitations"><FaInstagram /></a>
         </span>
       </div>
 

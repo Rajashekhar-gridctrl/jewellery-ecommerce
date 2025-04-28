@@ -1,10 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
-import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import featuredImg from "../assets/images/woman-2.jpg";
-import productImg1 from "../assets/images/product-1.jpg";
-import productImg2 from "../assets/images/product-2.jpg";
+import { FiArrowRight } from "react-icons/fi";
+import productImg1 from "../assets/images/product-1-bg.png";
+import productImg2 from "../assets/images/product-2-bg.png";
 import productImg3 from "../assets/images/product-3.jpg";
 import productImg4 from "../assets/images/product-4.jpg";
 import productImg5 from "../assets/images/product-5.jpg";
@@ -28,18 +26,6 @@ const products = [
     { id: 12, name: "Sample Name Pearl Earrings", price: 850.00, oldPrice: 950.00, image: productImg4 },
 ];
 
-const arrowVariants: any = {
-    rest: { x: 50 },
-    hover: {
-        x: [50, 50, -5, 0],
-        transition: {
-            duration: 0.6,
-            repeat: Infinity,
-            repeatType: "loop",
-        },
-    },
-};
-
 const ProductYouMayLike = () => {
     return (
         <div className="container min-w-full p-5 px-10 mt-20 bg-green-100 rounded-md " style={{
@@ -60,7 +46,6 @@ const ProductYouMayLike = () => {
                                 <img src={product.image}
                                     className="w-full object-contain rounded-t-lg" />
                                 <div>
-
                                     <h4 className="relative font-lato p-2 rounded-b-lg text-green  sm:text-base text-[14px]  tracking-wider font-normal"
                                     >
                                         Necklace

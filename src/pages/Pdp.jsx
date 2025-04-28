@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MdOutlineCurrencyRupee, MdOutlineArrowForwardIos } from "react-icons/md";
+import { MdOutlineCurrencyRupee, MdOutlineArrowForwardIos, MdShare } from "react-icons/md";
 import ProductYouMayLike from "../components/ProductYouMayLike";
 import NewProductOffers from "../components/newProductOffers";
 import StoreLocations from "../components/StoreLocations";
@@ -27,8 +27,17 @@ const ProductDetailsPage = () => {
         setProductSize(size);
     }
 
+    const shareHandler = async () => {
+        await navigator.share({
+            url: 'https://ramyanagendra.com/products/laxmi-pendant-long-black-beads-rn278h46',
+            title: 'Laxmi pendant long black beads',
+            text: 'RN278H46',
+          });
+    }
+
+
     return (
-        <div className="p-10 pb-0  font-lato">
+        <div className="p-10 pb-0 font-lato">
             <div className="lg:max-w-6xl max-w-xl mx-auto">
                 <div className="grid items-start grid-cols-1 lg:grid-cols-2 gap-8 max-lg:gap-12 max-sm:gap-8">
                     <div className="w-full lg:sticky top-0">
@@ -75,8 +84,8 @@ const ProductDetailsPage = () => {
                         <hr className="my-6 border-slate-300" />
 
                         <div>
-                            <h3 className="text-lg sm:text-xl font-semibold text-slate-900">Sizes</h3>
-                            <div className="flex flex-wrap gap-4 mt-4">
+                            <h3 className="text-sm font-semibold text-slate-900">Sizes</h3>
+                            <div className="flex flex-wrap gap-4 mt-3">
                                 {['SM', 'MD', 'LG', 'XL'].map((size) => (
                                     <button key={size} type="button"
                                         onClick={sizeHandler.bind(this, size)}
@@ -86,7 +95,7 @@ const ProductDetailsPage = () => {
                             <div className="flex justify-left mt-5 w-full">
                                 <button
                                     onClick={setOrderCount.bind(this, (orderCount - 1) || 1)}
-                                    className="group py-4 px-6 border border-gray-400 rounded-l-full shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-300 hover:bg-gray-50">
+                                    className="group py-4 px-6 border border-[#c2a675] rounded-l-full shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-300 hover:bg-gray-50">
                                     <svg className="stroke-gray-700 transition-all duration-500 group-hover:stroke-black"
                                         width="22" height="22" viewBox="0 0 22 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -99,11 +108,11 @@ const ProductDetailsPage = () => {
                                     </svg>
                                 </button>
                                 <input type="text"
-                                    className="font-semibold text-gray-900 text-lg py-[13px] px-6 w-full lg:max-w-[118px] border-y border-gray-400 bg-transparent placeholder:text-gray-900 text-center hover:bg-gray-50 focus-within:bg-gray-50 outline-0"
+                                    className="font-semibold text-gray-900 text-lg py-[13px] px-6 w-full lg:max-w-[118px] border-y border-[#c2a675] bg-transparent text-center hover:bg-gray-50 focus-within:bg-gray-50 outline-0"
                                     value={orderCount} />
                                 <button
-                                    onClick={setOrderCount.bind(this, orderCount+1)}
-                                    className="group py-4 px-6 border border-gray-400 rounded-r-full shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-300 hover:bg-gray-50">
+                                    onClick={setOrderCount.bind(this, orderCount + 1)}
+                                    className="group py-4 px-6 border border-[#c2a675] rounded-r-full shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-300 hover:bg-gray-50">
                                     <svg className="stroke-gray-700 transition-all duration-500 group-hover:stroke-black"
                                         width="22" height="22" viewBox="0 0 22 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -115,14 +124,21 @@ const ProductDetailsPage = () => {
                                             stroke-width="1.6" stroke-linecap="round" />
                                     </svg>
                                 </button>
+
+                                <button
+                                onClick={shareHandler}
+                                    className="py-4 px-6 border border-[#c2a675] rounded-full shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-300 hover:bg-gray-50 ml-4 flex items-center gap-2">
+                                    <MdShare size={24} /> Share
+                                </button>
+
                             </div>
                             <div className="mt-6 flex flex-wrap gap-4">
                                 <button type="button"
-                                onClick={() => alert('Added to cart')}
+                                    onClick={() => alert('Added to cart')}
                                     className="px-4 py-3 w-[45%] border rounded-lg border-[#c2a675]  bg-[#c2a675] hover:bg-[#CFB484] text-white text-sm font-medium">Add
                                     to cart</button>
                                 <button type="button"
-                                onClick={() => alert('Added to wishlist')}
+                                    onClick={() => alert('Added to wishlist')}
                                     className="px-4 py-3 w-[45%] border rounded-lg border-slate-300 bg-slate-100 hover:bg-slate-200 text-slate-900 text-sm font-medium">Add
                                     to wishlist</button>
                             </div>
@@ -145,7 +161,7 @@ const ProductDetailsPage = () => {
                             <div className="flex items-center gap-2 mt-6 max-w-sm">
                                 <input type='tel' placeholder='Enter pincode'
                                     className="bg-slate-100 px-4 py-2.5 text-sm w-full  border-0 outline-0" />
-                                <button type='button'  onClick={() => alert('Fetching location')}
+                                <button type='button' onClick={() => alert('Fetching location')}
                                     className="border-0 outline-0 bg-[#c2a675] hover:bg-gray-600 text-white  px-4 py-2.5 text-sm">Apply</button>
                             </div>
 
