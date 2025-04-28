@@ -52,7 +52,7 @@ const ProductDetailsPage = () => {
                 <meta property="og:title" content='Divine 1grm Gold Bangles - Buy Now' />
                 <meta property="og:description" content='1grm Gold Chain' />
                 <meta property="og:image" content='https://jewellery-ecommerce-five.vercel.app/assets/product-1-jAlF4z-T.jpg' />
-                <meta property="og:url" content='https://jewellery-ecommerce-five.vercel.app/assets/product-1-jAlF4z-T.jpg' />
+                <meta property="og:url" content='https://jewellery-ecommerce-five.vercel.app/product' />
                 <meta property="og:type" content="product" />
             </Helmet>
 
