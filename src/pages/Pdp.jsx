@@ -39,7 +39,7 @@ const ProductDetailsPage = () => {
         await navigator?.share({
             url: 'https://jewellery-ecommerce-five.vercel.app/product',
             title: 'Divine 1grm Gold Bangles - Buy Now',
-            text: 'Ramya Nagendra - Divine 1grm Gold Bangles - Buy Now',
+            text: 'Ramya Nagendra - Divine 1grm Gold Bangles - Buy Now.',
         });
     }
 
@@ -132,7 +132,7 @@ const ProductDetailsPage = () => {
                                         </svg>
                                     </button>
                                     <input type="tel"
-                                        className="font-semibold text-lg py-[13px] px-6 w-full lg:max-w-[118px] border-y border-[#c2a675] text-center outline-0"
+                                        className="font-semibold text-lg py-[13px] px-6 max-w-[58px] sm:max-w-[118px] border-y border-[#c2a675] text-center outline-0"
                                         value={orderCount} />
                                     <button
                                         onClick={setOrderCount.bind(this, orderCount + 1)}
