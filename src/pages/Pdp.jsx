@@ -38,7 +38,7 @@ const ProductDetailsPage = () => {
     const shareHandler = async () => {
         await navigator?.share({
             url: 'https://jewellery-ecommerce-five.vercel.app/product',
-            title: 'Divine 1grm Gold Bangles - Buy Now.',
+            title: 'Divine 1grm Gold Bangles - Buy Now',
             text: 'Divine 1grm Gold Bangles - Buy Now',
         });
     }
